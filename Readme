@@ -23,6 +23,7 @@ Java JDK: Required for Apache Spark.
 Apache Spark: Utilized for efficient data processing and analysis.
 Hadoop: Hadoop is used in conjunction with Spark for distributed data processing.
 Pyodbc library: Used for database connectivity.
+Spyder: A Python IDE for data science and analysis.
 
 Usage:
 
