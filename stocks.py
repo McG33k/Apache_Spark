@@ -1,3 +1,9 @@
+# -*- coding: utf-8 -*-
+"""
+Created on Fri Nov  3 16:33:22 2023
+
+@author: CNyamutenha
+"""
 import pyodbc
 from pyspark.sql import SparkSession
 import yfinance as yf
@@ -5,7 +11,7 @@ import pandas as pd
 from datetime import datetime, timedelta
 from pyspark.sql.types import StructType, StructField, StringType, DoubleType, IntegerType
 
-# Define your database connection parameters
+# Define database connection parameters
 server = 'Localhost'
 database = 'Broker_Config'
 
@@ -14,7 +20,7 @@ connection = pyodbc.connect(f'Driver={{SQL Server}};Server={server};Database={da
 
 # Define the SQL query to fetch ISINs and corresponding tickers
 sql_query = """
-SELECT DISTINCT TOP 10 ISINCode, TickerSymbol
+SELECT DISTINCT TOP 20 ISINCode, TickerSymbol
 FROM Instruments
 WHERE TickerSymbol NOT LIKE '%LOCK%'
 AND listed = 1
