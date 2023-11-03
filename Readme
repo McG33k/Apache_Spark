@@ -16,6 +16,14 @@ Exception Handling: The project includes robust error handling to deal with pote
 
 CSV Export: After data collection and analysis, the results are exported to a CSV file for further use or sharing with other applications.
 
+Technologies Used:
+
+Python: Used for project development and scripting.
+Java JDK: Required for Apache Spark.
+Apache Spark: Utilized for efficient data processing and analysis.
+Hadoop: Hadoop is used in conjunction with Spark for distributed data processing.
+Pyodbc library: Used for database connectivity.
+
 Usage:
 
 Clone the project repository from GitHub.
