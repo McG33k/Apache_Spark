@@ -1,0 +1,29 @@
+The Stock Price Data Collection and Analysis project is a Python-based data collection and analysis tool that retrieves historical stock price data from Yahoo Finance using YFinance and performs data analysis on the collected data. The project is designed to provide valuable insights for investors, traders, and financial analysts.
+
+Key Features:
+
+Data Collection: The project uses YFinance to fetch historical stock price data for a list of financial instruments. It can collect data for a specified date range and a set of financial instruments, filtering out unwanted data.
+
+Data Storage: Collected data is stored in a structured Spark DataFrame, which allows for efficient data processing and analysis.
+
+Data Analysis: The project provides basic data analysis features, such as calculating stock price statistics, visualizing trends, and identifying patterns in the data.
+
+Database Connection: The project connects to a SQL Server database to retrieve financial instrument information. It fetches ISINs and corresponding tickers from the database to initiate data collection.
+
+Customization: Users can customize the project by specifying their preferred date range and the list of financial instruments they want to analyze.
+
+Exception Handling: The project includes robust error handling to deal with potential issues, such as missing data, network problems, and exceptions during data collection.
+
+CSV Export: After data collection and analysis, the results are exported to a CSV file for further use or sharing with other applications.
+
+Usage:
+
+Clone the project repository from GitHub.
+Set up the required dependencies, including Pyodbc, Spark, YFinance, and others.
+Configure the database connection parameters and customize the data collection parameters.
+Run the Python script, and the project will collect, analyze, and store historical stock price data.
+This project is useful for anyone interested in collecting and analyzing historical stock price data for investment decisions, research, or financial analysis. It serves as a valuable tool for understanding the historical performance of various financial instruments. The data collected can be used for building financial models, making informed investment decisions, and gaining insights into market trends.
+
+GitHub Repository: https://github.com/McG33k/Apache_Spark_Stock_Prices.git
+
+Feel free to contribute, provide feedback, or open issues on the GitHub repository. Your contributions will be highly appreciated.
